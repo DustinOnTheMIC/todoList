@@ -37,8 +37,8 @@ const Confirm = ({ onConfirm, onCancel, children }) => {
                 <div>This action will delete the task out of the to do list</div>
               </div>
               <div className="confirmActions">
-                <button className="btn btn-success" onClick={handleConfirm}>Confirm</button>
                 <button className="btn btn-error" onClick={handleCancel}>Cancel</button>
+                <button className="btn btn-success" onClick={handleConfirm}>Confirm</button>
               </div>
             </div>
           </div>,

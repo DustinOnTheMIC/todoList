@@ -44,7 +44,7 @@ const TodoItem = ({ id = '', checked = false, onChangeCheck }) => {
       setTodoState(newState)
       setToLocalStorage(newState)
       setShowDetail(false)
-      setAlertAppState({ message: 'Update task successfully', type: AlertTypeEnum.success, open: true })
+      setAlertAppState({ message: 'Successfully update task', type: AlertTypeEnum.success, open: true })
     }
   }
 
@@ -55,7 +55,7 @@ const TodoItem = ({ id = '', checked = false, onChangeCheck }) => {
       newState.splice(index, 1)
       setTodoState(newState)
       setToLocalStorage(newState)
-      setAlertAppState({ message: 'Remove task successfully', type: AlertTypeEnum.success, open: true })
+      setAlertAppState({ message: 'Successfully remove task', type: AlertTypeEnum.success, open: true })
     }
   }
 

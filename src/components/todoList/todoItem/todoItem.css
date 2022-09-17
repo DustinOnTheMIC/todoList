@@ -11,6 +11,12 @@
     width: 100%;
 }
 
+.todoItemInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .label {
     cursor: pointer;
     user-select: none;
@@ -19,6 +25,7 @@
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
+    margin-bottom: 5px;
 }
 
 .todoItemActions {

@@ -26,7 +26,7 @@ const CreateTodo = () => {
     newList.push(newData)
     setTodoState(todoState)
     setToLocalStorage(newList)
-    setAlertAppState({ message: 'Create task successfully', type: AlertTypeEnum.success, open: true })
+    setAlertAppState({ message: 'Successfully create task', type: AlertTypeEnum.success, open: true })
     handleGoBack()
   }
 

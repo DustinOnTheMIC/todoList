@@ -91,7 +91,7 @@ const ListTodo = () => {
     setSelectingTodo([])
     setTodoState(newList)
     setToLocalStorage(newList)
-    setAlertAppState({ message: 'Remove task successfully', type: AlertTypeEnum.success, open: true })
+    setAlertAppState({ message: 'Successfully remove task', type: AlertTypeEnum.success, open: true })
   }
 
   return <div className="listToDoContainer">
@@ -130,7 +130,7 @@ const ListTodo = () => {
     {
       selectingTodo.length ?
         <div className="footerActions">
-          <button className="btn btn-primary" onClick={handleRemoveTodo}>Done</button>
+          <button className="btn btn-primary">Done</button>
           <Confirm onConfirm={handleRemoveTodo}>
             <button className="btn btn-error">Remove</button>
           </Confirm>

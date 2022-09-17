@@ -27,7 +27,7 @@ const TodoForm = (
       name: '',
       description: '',
       dueDate: new Date().toISOString().split('T')[0],
-      priority: PriorityEnum.low,
+      priority: PriorityEnum.normal,
     }
   )
 
@@ -108,7 +108,7 @@ const TodoForm = (
           {errors?.name && <div className="errorsMessage">{errors?.name?.message}</div>}
 
           <div className="description">
-            <div className="title p-0 w-100">Description</div>
+            <div className="title p-0 w-100 des">Description</div>
             <textarea rows="4" className="textArea" value={todoState.description} onChange={handleChangeDescription}></textarea>
           </div>
 
