@@ -1,0 +1,83 @@
+.listToDoContainer {
+    min-height: 550px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px #00000029;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.listToDoContainer>.body {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.listToDoContainer>.body>.title {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.listToDoContainer>.body>.content {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+}
+
+.listToDoContainer>.body>.content>.headerActions {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 469px) {
+    .listToDoContainer>.body>.content>.headerActions>.search {
+        width: 100% !important;
+    }
+
+    .btnAddNew {
+        width: 100% !important;
+    }
+}
+
+.listToDoContainer>.body>.content>.headerActions>.search {
+    width: 300px;
+}
+
+.listToDoContainer>.body>.content>.todoItems {
+    height: 100%;
+    overflow: auto;
+    padding: 5px 2px;
+    max-height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.listToDoContainer>.footerActions {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-wrap: wrap;
+    bottom: 0;
+    gap: 10px;
+    padding: 10px 13px 0 13px;
+    border-top: 1px solid;
+}

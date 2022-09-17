@@ -1,0 +1,50 @@
+.todoItemContainer {
+    min-height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #00000029;
+    padding: 10px 10px;
+    width: 100%;
+}
+
+.label {
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.todoItemActions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.detail {
+    width: 100%;
+    height: fit-content;
+    transition: ease-in-out .4s;
+    overflow: hidden;
+    max-height: 500px;
+}
+
+.hide {
+    max-height: 0;
+}

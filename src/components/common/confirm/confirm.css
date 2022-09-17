@@ -1,0 +1,48 @@
+.confirmContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.backDrop {
+    position: fixed;
+    background-color: rgba(45, 52, 54, .3);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.confirm {
+    max-width: 400px;
+    padding: 20px 30px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.confirmBody {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.confirmActions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 40px 0 5px 0;
+}

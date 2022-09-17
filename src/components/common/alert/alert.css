@@ -1,0 +1,28 @@
+.alertContainer {
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.alertBody {
+    width: fit-content;
+    max-width: 200px;
+    padding: 3px 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.alertError {
+    border: 1px solid #EE5253;
+    color: #EE5253
+}
+
+.alertSuccess {
+    border: 1px solid #20BF6B;
+    color: #20BF6B
+}
