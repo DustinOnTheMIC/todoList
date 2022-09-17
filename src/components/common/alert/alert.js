@@ -13,18 +13,26 @@ const Alert = () => {
 
   useEffect(() => {
     alertAppState.open !== openState && setOpenState(alertAppState.open)
+    if (alertAppState.open) {
+      refreshAlert()
+    }
+    
+    return () => clearTimeout(timerRef.current)
   }, [alertAppState])
 
   useEffect(() => {
-    timerRef.current && clearTimeout(timerRef.current)
+    refreshAlert()
 
+    return () => clearTimeout(timerRef.current)
+  }, [openState])
+
+  const refreshAlert = () => {
+    timerRef.current && clearTimeout(timerRef.current)
     timerRef.current = setTimeout(() => {
       setOpenState(false)
       setAlertAppState(prev => ({ ...prev, open: false }))
     }, 3000);
-
-    return () => clearTimeout(timerRef.current)
-  }, [openState])
+  }
 
   return (
     openState && ReactDOM.createPortal(
